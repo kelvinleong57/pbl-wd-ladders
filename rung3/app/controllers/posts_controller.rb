@@ -11,6 +11,7 @@ class PostsController < ApplicationController
 		Post.all.each do |post|
 			@image_urls << post.image_url
 		end
+		
 		render 'static-site'
 	end
 
